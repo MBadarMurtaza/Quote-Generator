@@ -14,26 +14,24 @@
       <div
         class="border-b-4 border-[#387fd0] w-32 rounded-2xl mx-auto mb-[40px]"
       ></div>
-      <blockquote class="text-[26px] min-h-[110px] italic">
-        "Loading..."
-      </blockquote>
+      <blockquote
+        id="quote"
+        class="text-[26px] min-h-[110px] italic"
+      ></blockquote>
       <span
+        id="author"
         class="mt-[10px] block relative italic float-right before:content-[' '] before:absolute before:w-5 before:h-0.5 before:bg-[rgb(23,124,229)] before:top-[50%] before:left-[-30px]"
-        >Loading...</span
-      >
+      ></span>
       <div class="w-full mt-[50px] flex justify-center">
         <button
+          onclick="fetchData(url)"
+          id="new"
           class="bg-[rgb(23,124,229)] text-white rounded-3xl border-[1px_solid_rgb(23,124,229)] w-[150px] h-[50px] flex items-center justify-center m-[5px] cursor-pointer"
         >
           New Quote
         </button>
-        <button
-          class="bg-transparent text-[#333 ] rounded-3xl border-[1px] border-[rgb(23,124,229)] border-solid w-[150px] h-[50px] flex items-center justify-center m-[5px] cursor-pointer"
-        >
-          <img class="w-[20px] mr-[10px]" src="/images/facebook.png" alt="" />
-          FaceBook
-        </button>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
