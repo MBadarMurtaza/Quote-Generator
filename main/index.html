@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
     <title>Quote Generator</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-[#bbc6fa]">
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white w-[700px] p-[40px] rounded-[10px] text-center shadow-[0px_10px_20px_0px_rgba(0,0,0,0.15)]"
+    >
+      <h2 class="text-[32px] font-bold">Quote of the Day</h2>
+      <div
+        class="border-b-4 border-[#387fd0] w-32 rounded-2xl mx-auto mb-[40px]"
+      ></div>
+      <blockquote class="text-[26px] min-h-[110px] italic">
+        "Loading..."
+      </blockquote>
+      <span
+        class="mt-[10px] block relative italic float-right before:content-[' '] before:absolute before:w-5 before:h-0.5 before:bg-[rgb(23,124,229)] before:top-[50%] before:left-[-30px]"
+        >Loading...</span
+      >
+      <div class="w-full mt-[50px] flex justify-center">
+        <button
+          class="bg-[rgb(23,124,229)] text-white rounded-3xl border-[1px_solid_rgb(23,124,229)] w-[150px] h-[50px] flex items-center justify-center m-[5px] cursor-pointer"
+        >
+          New Quote
+        </button>
+        <button
+          class="bg-transparent text-[#333 ] rounded-3xl border-[1px] border-[rgb(23,124,229)] border-solid w-[150px] h-[50px] flex items-center justify-center m-[5px] cursor-pointer"
+        >
+          <img class="w-[20px] mr-[10px]" src="/images/facebook.png" alt="" />
+          FaceBook
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
